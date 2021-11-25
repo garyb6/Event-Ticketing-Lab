@@ -12,5 +12,12 @@ class TestEvent(unittest.TestCase):
     def test_event_has_name(self):
         self.assertEqual ("Cochella", self.event.name)
     
-    def test_sell_ticket(self, customer):
-        pass 
+    
+
+    
+    # def test_sell_ticket(self):
+    #     pass#check if customer has enough for ticket 
+    #     #if True: 
+            #add_ticket_to_customer
+            #add_money_to_revenue
+            #deduct_money_from_wallet

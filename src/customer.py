@@ -3,5 +3,9 @@ class Customer:
         self.name = name
         self.wallet = wallet 
         self.fav_performer = fav_performer 
-    
+
+    def can_afford(self, ticket_price):
+        if self.wallet >= ticket_price:
+            return True 
+        else: False 
     
