@@ -9,3 +9,7 @@ class Event:
         self.customer_list = customer_list 
         self.performer_list = performer_list
         self.revenue = 0 
+    
+    def add_to_customer_list(self, customer):
+        self.customer_list.append(customer)
+        return len(self.customer_list) 

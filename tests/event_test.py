@@ -8,16 +8,21 @@ class TestEvent(unittest.TestCase):
         self.cartman = Customer ("Cartman", 20.00, "Chef")
         self.chef = Performer ("Chef")
         self.event = Event ("Cochella", 100, 10.00,[self.cartman], [self.chef])
+        self.customer_list = [] 
 
     def test_event_has_name(self):
         self.assertEqual ("Cochella", self.event.name)
     
+    def test_add_customer_to_customer_list(self):
+        self.customer_list.append(self.cartman)
+        self.assertEqual (1, len(self.customer_list))
     
-
-    
-    # def test_sell_ticket(self):
-    #     pass#check if customer has enough for ticket 
-    #     #if True: 
-            #add_ticket_to_customer
-            #add_money_to_revenue
-            #deduct_money_from_wallet
+#     @unittest.skip("delete")
+#         def test_sell_ticket(self, customer):
+# #         customer.can_afford() 
+        
+# # #check if customer has enough for ticket 
+# #         #if True: 
+# #             add customer to customer list
+# #             add_money_to_revenue
+# #             deduct_money_from_wall
